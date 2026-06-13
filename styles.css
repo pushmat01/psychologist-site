@@ -246,8 +246,9 @@ h3 {
 .profile-photo {
   display: block;
   width: 100%;
-  min-height: 420px;
+  height: clamp(420px, 58vw, 620px);
   object-fit: cover;
+  object-position: 53% 28%;
   border-radius: var(--radius);
 }
 
@@ -512,7 +513,8 @@ h3 {
   }
 
   .profile-photo {
-    min-height: 300px;
+    height: 420px;
+    object-position: 52% 22%;
   }
 
   .cards-grid,
